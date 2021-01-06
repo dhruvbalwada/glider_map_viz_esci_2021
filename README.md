@@ -15,5 +15,5 @@ The goal of this project is to develop tools to better explore these glider data
 - Develop a mapping algorithm to map from the scattered space-time observations collected by the glider to a grid, which is easier to visualize and conduct analysis on, and also respects the structural properties of the fields.
 - Develop a visualization dashboard for the glider, which allows for an interactive analysis of the data - eg colocate multiple variables to get a deeper insight into how observed structures might be generated.
 
->![](https://i.imgur.com/LHjmsUn.png)
+>![](https://i.imgur.com/LHjmsUn.png)  
 Figure: An example of a temperature section collected by a glider showing the zig-zag sampling, and examples of temperature filaments extending across depth. 
