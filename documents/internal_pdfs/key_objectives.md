@@ -9,7 +9,6 @@ Here are the things that need to happen:
 - Figure out how to choose correlation functions. This will require some testing and thinking. Matern functions might be a good starting point. How to account for X-Y-Z-T sampling? 
 - Generate a test data set from a high-resolution ocean simulation (LLC4320) to test GPyTorch based mapping; a dataset where the truth is know.
 - Figure out how to sample the model like a glider.
-- How do we deal with the large number of points from the glider?
 - ... (probably more things will crop up here)
 - Once a method works on model samples, try it on glider data. 
 - Do some sensitivity analysis on test data to learn how much confidence we can place on mapped glider data. 
@@ -36,4 +35,4 @@ We are planning on using [HoloViz](https://holoviz.org/) to develop an interacti
 
 
 >**What is one key science result that would be great to get insight from this platform?**   
->asd..
+>The ease of exploring data would be essential to gain a deeper understanding of the data much faster. For the glider data at hand we will use the to explore the structure and size of the anomalies.
