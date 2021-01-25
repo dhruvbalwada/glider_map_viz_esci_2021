@@ -18,23 +18,21 @@ The goal of this project is to develop tools to better explore these glider data
 >![](https://i.imgur.com/LHjmsUn.png)  
 Figure: An example of a temperature section collected by a glider showing the zig-zag sampling, and examples of temperature filaments extending across depth. 
 
+
 ### Experiment and Data Sketch
 
-The field data are from a Lagrangian drift experiment conducted in 2019 in the southern ocean.
+
+The field data are from a drift experiment (intended: Lagrangian) over winter 2019 in the southern ocean.
 Two gliders designated "*659*" and "*660*" were deployed
-for 88 days April 28 - July 24, 2019 in proximity to an ARGO BioGeoChem drifter.
+for 86 days April 28 - July 24, 2019 in proximity to an ARGO BioGeoChem drifter.
 This coincides with winter in the southern hemisphere. 
 The deployment was over the Southwestern Indian Ridge (SWIR) 
 southeast of Africa.
-The two gliders executed approximately six dive/ascent cycles per day and were episodically 
+The two gliders executed roughly six V-shaped dive/ascent cycles per day: 
+To depth 1000 meters and surface distances of 3.3km on average. Gliders were episodically 
 re-tasked by scientists aboard the monitoring research vessel in response to evolving conditions.
-
-
-The ARGO drifter cycled through the water column every five days. 
-This consisted of a long 'park' interval at 1000 meters, descent to 2000 meters, ascent to the surface, 
-data telemetry via satellite ('20 minutes'), and a descent back to 1000 meters for the next park.  
-Satellite altimetry data were collected for this study, consisting of three scalar fields over the
-time extent of the experiment. These are sea surface height (SSH), sea surface height anomaly (SSHA) 
-and a transport characterization parameter called FSLE that is derived from surface velocity 
-vector fields. FSLE abbreviates 'Finite-Size Lyapunov Exponent' and indicates trajectory
-separation rate for two surface drifters initially close to one another.
+The ARGO drifter made a water column ascent once every five days through 2000 meters. 
+Satellite-derived datasets were also assimilated in this study: Sea surface height (SSH), anomaly (SSHA) 
+and a transport characterization parameter called FSLE derived from surface velocity 
+vector fields. For more detailed notes see 
+[this document](https://github.com/dhruvbalwada/glider_map_viz_esci_2021/edit/main/README.md).
