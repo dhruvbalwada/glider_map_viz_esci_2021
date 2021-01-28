@@ -36,4 +36,4 @@ We are planning on using [HoloViz](https://holoviz.org/) to develop an interacti
 
 
 >**What is one key science result that would be great to get insight from this platform?**   
->asd..
+>The ease of exploring data would be essential to gain a deeper understanding of the data much faster. For the glider data at hand we will use the to explore the structure and size of the anomalies.
