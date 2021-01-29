@@ -1,0 +1,34 @@
+name: glider-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - ipykernel
+  - geopandas
+  - gsw
+  - fsspec
+  - xarray
+  - geoviews
+  - hvplot
+  - holoviews
+  - datashader
+  - fastparquet
+  - dask
+  - cartopy
+  - scipy
+  - numba
+  - netcdf4=1.5.4
+  - matplotlib
+  - panel
+  - jupyterlab=2
+  - jupyter-panel-proxy
+  - hdf5
+  - pyproj
+  - gpytorch
+  - pykrige
+  - basemap
+  - numexpr
+  - pip:
+    - ray
+    - git+git://github.com/dhruvbalwada/GliderTools.git@add_spice
