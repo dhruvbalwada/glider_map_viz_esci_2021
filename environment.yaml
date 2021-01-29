@@ -28,6 +28,7 @@ dependencies:
   - gpytorch
   - pykrige
   - basemap
+  - numexpr
   - pip:
     - ray
     - git+git://github.com/dhruvbalwada/GliderTools.git@add_spice
