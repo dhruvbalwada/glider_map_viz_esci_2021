@@ -21,19 +21,32 @@ Here are the things that need to happen:
 
 
 ## Visualization
-We are planning on using [HoloViz](https://holoviz.org/) to develop an interactive dashboard. We have a prototype that sort of does somethings, but we need to think more about what we want exactly. Here are some key things that need to happen: 
 
-- The viz is currently done using a gridded data set, where linear interpolation has been done. We need to improve on this. 
-- Integrate more variables measured by gliders into dashboard.
-- An easy way to switch back and forth between distance and time axis. 
-- Is the current plotting taking place optimally? or are we replotting frames that are not needed (wasting resources)?
-- Zooming and panning often resets different panels, would be nice to fix that. 
-- An easy way to switch colorbars. 
-- Should we incorporate an option to save the state (maybe just a figure generated from the state of the dashboard)? Incase the user finds an interesting feature that they would like to remember to explore later. 
-- Are there other surface variables we can tap into? Last I checked the region was very cloudy during the glider mission - implying very coarse SST and chlorophyll. 
-- Can we host the dashboard in a place for others to use? 
-- What is a good way to share the dashboard that allows others to easily adopt it?
+We want to create an interactive dashboard for visualizing glider data using holoviz. A prototype is here: https://github.com/dhruvbalwada/glider-panel-demo. Increasing the ease with which we can interact with the data can help discovery.
 
+The dashboard has two parts: 
+- A X-Y map with the glider track, and some additional properties plotted for context. 
+- A depth vs time (or distance) plot of the glider measurements along the vertical axis.
 
->**What is one key science result that would be great to get insight from this platform?**   
->The ease of exploring data would be essential to gain a deeper understanding of the data much faster. For the glider data at hand we will use the to explore the structure and size of the anomalies.
+#### Requirements for the two parts:
+
+General requirements for both: 
+- Switch to a class based approach for the code, as it potentially make a lot of other things easier.
+- Have options to switch colormaps and color ranges interactively. 
+- Make sure that the entire plot is only replotted when needed, to ensure a smooth interaction.
+- Right now zooming and panning often resets different panels, would be nice to keep zoom levels.
+- Have a way to save state, so that when returning to the dashboard the exact options as a previous session can be loaded.
+- Atleast have options to save images. 
+- ~~Can we host the dashboard in a place for others to use?~~ 
+- What is a good way to share the dashboard that allows others to easily adopt it?: Improve documentation in notebooks and scripts so that other users with their own data sets can easily incorporate their own data sets into it.
+
+The horizontal map: 
+- Have an option to look a the bathymetry. 
+- Currently the SSH, FSLE or other fields being plotted have to be manually downloaded and manipulated before they are put into the dashboard. Is this the best approach? 
+- Can some of these fields be automatically accessed, rather than having to manually download them first.
+
+The vertical map: 
+- Add other variables measured by the glider into the list of variables. 
+- Add ability to toggle between anomaly and full fields. Should this be done before hand and variables be saved? 
+- Add an option to toggle the horizontal axis between time and along track distance.
+- Have different options for interpolation. Currently done using linear interpolation, but have an option for GPs when first part is finished.
