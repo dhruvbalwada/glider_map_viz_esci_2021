@@ -30,22 +30,27 @@ The dashboard has two parts:
 
 #### Requirements for the two parts:
 
-General requirements for both: 
+**General requirements for both:** 
 - ~~Switch to a class based approach for the code, as it potentially make a lot of other things easier.~~
 - ~~Have options to switch colormaps and color ranges interactively.~~
 - Make sure that the entire plot is only replotted when needed, to ensure a smooth interaction.
 - Right now zooming and panning often resets different panels, would be nice to keep zoom levels.
-- Have a way to save state, so that when returning to the dashboard the exact options as a previous session can be loaded.
 - ~~Atleast have options to save images.~~ 
 - ~~Can we host the dashboard in a place for others to use?~~ 
 - What is a good way to share the dashboard that allows others to easily adopt it?: Improve documentation in notebooks and scripts so that other users with their own data sets can easily incorporate their own data sets into it.
 
-The horizontal map: 
+**The horizontal map:** 
 - Have an option to look a the bathymetry. 
-- Currently the SSH, FSLE or other fields being plotted have to be manually downloaded and manipulated before they are put into the dashboard. Is this the best approach? Can some of these fields be automatically accessed, rather than having to manually download them first.
 
-The vertical map: 
-- Add other variables measured by the glider into the list of variables. 
-- Add ability to toggle between anomaly and full fields. Should this be done before hand and variables be saved? 
+**The vertical map:** 
+- ~~Add other variables measured by the glider into the list of variables.~~ 
+- ~~Add ability to toggle between anomaly and full fields. Should this be done before hand and variables be saved?~~ 
 - Add an option to toggle the horizontal axis between time and along track distance.
+
+
+**Wishlist for the glider panel:**
+- Incorporate a simpler version (only glider panel) into glidertools. The glider-panel can still stay as a more complex case study that people can refer to.
 - Have different options for interpolation. Currently done using linear interpolation, but have an option for GPs when first part is finished.
+- Currently the SSH, FSLE or other fields being plotted have to be manually downloaded and manipulated before they are put into the dashboard. Is this the best approach? Can some of these fields be automatically accessed, rather than having to manually download them first.
+- Have a way to save state, so that when returning to the dashboard the exact options as a previous session can be loaded.
+- A smoothly working 2 way link between the time slider and panning/zooming glider figure.
